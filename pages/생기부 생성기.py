@@ -4,6 +4,7 @@ import streamlit as st
 st.title('나의 첫 웹 서비스 만들기!!')
 
 # 사용자 입력 받기
+name = st.text_input('이름을 입력해주세요 : ')
 personality = st.text_input('성격을 한 단어로 입력해주세요 : ')
 
 # 인사말 생성 버튼 클릭 시 실행되는 코드
