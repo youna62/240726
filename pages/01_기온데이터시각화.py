@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import koreanize-maplotlib
+import koreanize_matplotlib
 
 # 데이터 불러오기
 data = pd.read_csv('daily_temp.csv')
