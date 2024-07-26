@@ -5,7 +5,7 @@ file_path = 'daily_temp.csv'
 data = pd.read_csv(file_path)
 
 # Convert date column to datetime
-data['date'] = pd.to_datetime(data['date'])
+data['date'] = pd.to_datetime(data['날짜'])
 
 # Extract year from the date
 data['year'] = data['date'].dt.year
