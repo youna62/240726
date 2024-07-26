@@ -74,4 +74,15 @@ if st.button('특성 분석 결과 보기'):
             },
             '현실적': {
                 '특징': '현실적인 사람들은 현실적이고 실용적인 사고를 중시하며, 실제 경험과 사실에 기반하여 결정을 내림.',
-                '기록부': f'{name} 학생은 매우 현실적이고 실용적인 성격을 가짐. 실제 경험과 사실에 기반하여 결정을 내리며, 실용적인
+                '기록부': f'{name} 학생은 매우 현실적이고 실용적인 성격을 가짐. 실제 경험과 사실에 기반하여 결정을 내리며, 실용적인 해결책을 제시함.'
+            }
+        }
+
+        # 성격 유형에 따른 결과 출력
+        if personality in personality_details:
+            st.write(f"**특징:** {personality_details[personality]['특징']}")
+            st.write(f"**기록부:** {personality_details[personality]['기록부']}")
+        else:
+            st.write("알려지지 않은 성격 유형입니다. 다시 입력해주세요.")
+    else:
+        st.write("이름과 성격을 입력해주세요!")
