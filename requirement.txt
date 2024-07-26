@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-file_path = '/mnt/data/daily_temp.csv'
+file_path = 'daily_temp.csv'
 data = pd.read_csv(file_path)
 
 # Convert date column to datetime
